@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trello Clone
 
-## Getting Started
+This is a Trello clone project built using ReactJS, TypeScript, and Appwrite for the database.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create and manage boards, lists, and cards.
+- Drag and drop functionality for easy organization.
+- Summarize the lists and cards using chatgpt
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To install and run this project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```shell
+   git clone https://github.com/your-username/trello-clone.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navigate to the project's directory:
 
-## Deploy on Vercel
+   ```shell
+   cd trello-clone
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install the dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```shell
+   npm install
+   ```
+
+4. Configure the Appwrite backend:
+
+   - Create an account on [Appwrite](https://appwrite.io/) and set up a new project.
+   - Create a `.env` file in the project root and provide the necessary environment variables:
+
+     ```env
+     REACT_APP_APPWRITE_ENDPOINT=your-appwrite-endpoint
+     REACT_APP_APPWRITE_PROJECT_ID=your-appwrite-project-id
+     REACT_APP_APPWRITE_API_KEY=your-appwrite-api-key
+     ```
+
+5. Start the development server:
+
+   ```shell
+   npm start
+   ```
+
+The application should now be running on [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+- Create a new board and add lists and cards to it.
+- Drag and drop cards to reorganize them.
+- summarize todays lists and cards.
+
+## Technologies
+
+- ReactJS: JavaScript library for building user interfaces.
+- TypeScript: Typed superset of JavaScript for enhanced development.
+- Appwrite: Open-source backend server for building web and mobile apps.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Make sure to adhere to the project's code of conduct.
+
